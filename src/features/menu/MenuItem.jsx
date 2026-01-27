@@ -1,7 +1,7 @@
 import { formatCurrency } from "../../utils/currency.js";
 
 function MenuItem({ pizza }) {
-  const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+  const { name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
   return (
     <li>
