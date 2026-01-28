@@ -20,5 +20,6 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'react/prop-types': 'off',
+    'react/no-unescaped-entities': 'off',
   },
 }
