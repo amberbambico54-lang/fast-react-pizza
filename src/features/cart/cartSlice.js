@@ -28,7 +28,11 @@ const cartSlice = createSlice({
       item.quantity--;
       if (item.quantity === 0) {
         item.quantity = 1;
+
+        //this automatically deletes the item if its reach 0
+        // cartSlice.caseReducers.deleteItem(state, action);
       }
+
       item.totalPrice = item.quantity * item.unitPrice;
     },
     clearCart(state, action) {
